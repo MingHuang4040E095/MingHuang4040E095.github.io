@@ -1,0 +1,255 @@
+// *{
+//     border: 0.2px solid red !important;
+// }
+$primary-color:#000000;
+$secondary-color:#ea7484;
+$light-color: #52575a;
+body {
+    position: relative;
+    background: center no-repeat fixed;
+    background-size: cover;
+    background-image: url('../img/bg2.jpg');
+    font-size: 20px;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background-color: hsla(0, 0, 0, 0);
+    cursor: pointer;
+    color: $secondary-color;
+    position: relative;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    top: 0;
+    &:hover {
+        top: -10px;
+    }
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     width: 20px;
+    //     height: 20px;
+    //     border: 4px solid $secondary-color;
+    // }
+}
+.btn-anime {
+    position: relative;
+    top: 0;
+    width: 100px;
+    border-top: 4px solid $secondary-color;
+    animation-name: more;
+    animation-delay: 0.5s;
+    animation-iteration-count: initial;
+    animation-duration:3s;
+}
+
+.btn-anime::after {
+    content: '';
+    border-top: 4px solid $secondary-color;
+    border-right: 4px solid $secondary-color;
+    position: absolute;
+    top: -12px;
+    right: 0;
+    width: 16px;
+    height: 16px;
+    transform: rotate(45deg);
+}
+
+@keyframes more{
+    0%{
+        opacity: 0;
+        left: -150px;
+    }
+    100%{
+        opacity: 1;
+        left: 0;
+    }
+}
+
+// .btn-anime {
+//     position: relative;
+//     .btn > div {
+//         width: 120px;
+//         border-bottom: 1.2px solid $primary-color;
+//     }
+//     .btn:hover {
+//         > div{
+//             border-bottom: 1.2px solid $primary-color;
+//         }
+//     }
+// }
+
+a {
+    color: $primary-color;
+    text-decoration: none;
+}
+
+p,h1,h2,h3,h4 {
+    line-height: normal;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1140px;
+}
+
+.text-inden {
+    text-indent: 5rem;
+}
+
+$margin-type:all top bottom left right;
+$margin-size: 1 2 3 4 5;
+@mixin margin($type,$size) {
+    @if $type == all {
+        margin: $size*0.5rem;
+    }@else {
+        margin-#{$type}: $size*0.5rem;
+    }
+}
+
+@each $size in $margin-size {
+    @each $type in $margin-type {
+        .m-#{$type}-#{$size} {
+            @include margin($type, $size)
+        }
+    }
+}
+
+$padding-type:all top bottom left right;
+$padding-size: 1 2 3 4 5;
+@mixin padding($type,$size) {
+    @if $type == all {
+        padding: $size*0.5rem;
+    }@else {
+        padding-#{$type}: $size*0.5rem;
+    }
+}
+
+@each $size in $padding-size {
+    @each $type in $padding-type {
+        .p-#{$type}-#{$size} {
+            @include padding($type, $size)
+        }
+    }
+}
+
+
+@mixin font-size($size) {
+    font-size: (3/$size)*1rem;
+}
+
+@for $i from 1 through 4 {
+    h#{$i} {
+        @include font-size($i)
+    }
+}
+
+.navbar {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .logo {
+        font-weight: bold;
+        padding: 0.5rem 1.5rem 0.5rem 0;
+    }
+    ul {
+        display: flex;
+        .active {
+            border-bottom: 2.5px solid $primary-color;
+            >a {
+                color: $primary-color;
+            }
+        }
+        li {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            &:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+}
+// @mixin col($i,$col-num){
+//     box-sizing: border-box;
+//     width: ($i / $col-num)*100%; 
+// }
+
+$col-num:12;
+$screens: xs sm;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    @for $i from 1 through $col-num {
+        // %col {
+        //     box-sizing: border-box;
+        //     width: ($i / $col-num)*100%;
+        // }
+        // @for $y from 1 through length($screens) {
+        @each $screen in $screens {
+            .col-#{$screen}-#{$i} {
+                // @extend %col;
+                padding: 15px;
+                box-sizing: border-box;
+                width: ($i / $col-num)*100%;
+            }
+        }
+    }
+    @media screen and (max-width:768px) {
+        %col-full {
+            width: 100%;
+        }
+        @each $screen in $screens {
+            @if $screen == sm {
+                @for $i from 1 through $col-num {
+                    .col-#{$screen}-#{$i} {
+                        @extend %col-full;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.title {
+    animation-name:fadein;
+    animation-delay: 0.5s;
+    animation-iteration-count: initial;
+    animation-duration:3s;
+}
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.introduction {
+    animation-name:fadein;
+    animation-delay: 0.8s;
+    animation-iteration-count: initial;
+    animation-duration:3s;
+    border-left: 2.5px solid $secondary-color;
+}
+
+.community {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    >a {
+        color: $light-color;
+    }
+}
+
+.home-img {
+    border-radius: 50%;
+    border: 5px solid #fff;
+    width: 100%;
+    height: auto;
+}
