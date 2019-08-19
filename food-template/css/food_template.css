@@ -22,36 +22,24 @@ body {
 }
 
 .btn:hover {
-  top: -10px;
+  top: -5px;
+}
+
+.btn:hover + .btn-anime {
+  -webkit-animation-name: more;
+          animation-name: more;
+  -webkit-animation-iteration-count: initial;
+          animation-iteration-count: initial;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
 }
 
 .btn-anime {
   position: relative;
+  opacity: 1;
   top: 0;
   width: 100px;
   border-top: 4px solid #ea7484;
-  -webkit-animation-name: more;
-          animation-name: more;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation-iteration-count: initial;
-          animation-iteration-count: initial;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-}
-
-.btn-anime::after {
-  content: '';
-  border-top: 4px solid #ea7484;
-  border-right: 4px solid #ea7484;
-  position: absolute;
-  top: -12px;
-  right: 0;
-  width: 16px;
-  height: 16px;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
 }
 
 @-webkit-keyframes more {

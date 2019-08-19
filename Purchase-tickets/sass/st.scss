@@ -1,0 +1,257 @@
+$gray1:     #535353;
+$gray2:     #6a6969;
+$darkblue:  #282745;
+$pink:      #ea7484;
+$black:     #000;
+$white:     #fff;
+$cyanBlue: #01a3a4;
+
+$colors: (
+    primary:    $gray1,
+    secondary:  $gray2,
+    darkblue:   $darkblue,
+    pink:       $pink,
+    black:      $black,
+    white:      $white,
+    cyanBlue:   $cyanBlue
+);
+
+@each $name,$var in $colors {
+    .text-#{ $name } {
+        color: $var;
+    } 
+    .bg-#{ $name } {
+        background: $var;
+    }
+}
+
+body{
+    font-family: Microsoft JhengHei;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+@media screen and ( min-width: 768px ){
+    .container {
+        width: 750px;
+    }
+}
+
+
+@media screen and ( min-width: 992px ){
+    .container {
+        width: 1020px;
+    }
+}
+
+// @media screen and ( min-width: 1200px ){
+//     .container {
+//         width: 1200px;
+//     }
+// }
+
+//下拉選單
+.slct-group {
+    width: 100%;
+    position: relative;
+    .slct {
+        border: none;
+        border-bottom-width: 1.5px;
+        border-bottom-style: solid;
+        border-bottom-color: #959595;
+        appearance: none;
+
+        padding-left: 15px;
+        width: 100%;
+        line-height: 1.75;
+    
+    }
+    > div {
+        border-style: solid solid solid solid;
+        height: 0px;
+        width: 0px;
+        position: absolute;
+
+        border-width: 6px;  
+        border-color: #959595 transparent transparent transparent;
+        top: 12px;
+        right: 14px;
+        cursor: pointer;
+    }
+}
+
+//輸入框
+.input-text {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1.5px solid #959595;
+
+    font-size: 20px;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+//文字區塊
+.input-textarea {
+    box-sizing: border-box;
+    border: 1.5px solid #959595;
+    width: 100%;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+//旁邊有加減的輸入框
+.input-num-box {
+    text-align: center;
+    width: 100%;
+    .input-num-title {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .input-num {
+        display: flex;
+        .less,.add {
+            border: none;
+            background: none;
+            cursor: pointer;
+            flex: 1;
+            font-size: 28px;
+            &:focus {
+                outline: none;
+            }
+        }
+        .input-text {
+            text-align: center;
+            flex: 4;
+        }
+    }
+}
+
+//按鈕
+.st-btn {
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+}
+
+//內容置中
+.center-block {
+    display: flex;
+    justify-content: center;
+}
+
+//內容靠左右兩邊
+.space-between-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+//內容等間距排列
+.space-around-block {
+    display: flex;
+    justify-content: space-around;
+}
+
+//內容從左邊開始
+.flex-start-block {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.info-group {
+    box-sizing: border-box;
+    .info-item {
+        .info-title {
+            display: block;
+        }
+        .info-content {
+            display: block;
+            box-sizing: border-box;
+        }
+    }
+}
+
+@media screen and ( min-width : 768px ) {
+    .info-group {
+        .info-item {
+            display: flex;
+            .info-title {
+                display: inline-block;
+            }
+            .info-content {
+                display: inline-block;
+            }
+        }
+    }
+}
+
+.line {
+    position: relative;
+    border-bottom:1.5px solid #01a3a4;
+}
+
+
+//水平排列清單
+.list-block {
+    position: relative;
+    padding-inline-start: 0;
+    .list {
+        list-style: none;
+        display: inline-block;
+        cursor: pointer;
+    }
+}
+
+
+//卡片
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+        box-sizing: border-box;
+        .card-category {
+            font-size: 16px;
+            padding: 5px 0;
+        }
+        .card-img {
+            width: 100%;
+        }
+        .card-title {
+            font-weight: bold;
+            font-size: 18px;
+            padding: 5px 0;
+        }
+        .card-location {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #959595;
+            padding: 5px 0;
+            .card-icon {
+                i+i {
+                    margin-left: 20px;    
+                }
+            }
+        }
+    }
+}
+
+// .table {
+//     width: 100%;
+//     border-collapse: collapse;
+//     >thead, >tbody {
+//         width: 100%;
+//         >tr {
+//             width: 100%;
+//         }
+//     }
+// }

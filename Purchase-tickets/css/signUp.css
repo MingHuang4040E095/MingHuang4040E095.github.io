@@ -1,0 +1,583 @@
+.process {
+  position: relative;
+}
+
+.process .process-item {
+  display: inline-block;
+}
+
+.process .process-item .process-number {
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  padding: 0px 3px 4px 2px;
+  width: 20px;
+  height: 20px;
+}
+
+.process .process-item .process-name {
+  font-weight: bold;
+}
+
+.process label {
+  position: relative;
+  display: none;
+  top: -5px;
+  width: 170px;
+  height: 1.5px;
+}
+
+@media screen and (min-width: 768px) {
+  .process label {
+    display: inline-block;
+  }
+}
+
+.registeration-info {
+  width: 100%;
+  padding: 30px 0 0 0;
+}
+
+.registeration-info .registeration-info-item {
+  margin-bottom: 20px;
+}
+
+.registeration-info .registeration-info-item > label {
+  display: block;
+  text-align: left;
+  width: 100%;
+  font-size: 20px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.registeration-info .registeration-info-item > div > label {
+  display: block;
+}
+
+.registeration-info .registeration-info-item > div > input {
+  display: block;
+}
+
+.registeration-info .registeration-info-item .slct-group-min {
+  width: 100%;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+
+.registeration-info .registeration-info-item .slct-group-min .slct {
+  font-size: 16px;
+}
+
+.registeration-info .registeration-info-item .slct-group + .input-text {
+  max-width: 100%;
+}
+
+.registeration-info .registeration-info-item .input-textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1.5px solid #959595;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .registeration-info {
+    width: 70%;
+  }
+  .registeration-info .registeration-info-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .registeration-info .registeration-info-item > label {
+    display: inline-block;
+    text-align: right;
+    width: 120px;
+    margin-bottom: 0;
+  }
+  .registeration-info .registeration-info-item > input {
+    max-width: 560px;
+  }
+  .registeration-info .registeration-info-item .slct-group-min {
+    width: 130px;
+    margin-bottom: 0;
+  }
+  .registeration-info .registeration-info-item .slct-group + .input-text {
+    max-width: 425px;
+  }
+  .registeration-info .registeration-info-item > textarea, .registeration-info .registeration-info-item .slct-group {
+    max-width: 560px;
+  }
+}
+
+.ticket-selection {
+  margin-bottom: 40px;
+}
+
+.ticket {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.ticket .ticket-name {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+.ticket .ticket-info-group {
+  padding: 10px 15px;
+}
+
+.ticket .ticket-info-group .ticket-info-item {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.ticket .ticket-info-group .ticket-info-item .ticket-info-title {
+  width: 22%;
+}
+
+.ticket .ticket-info-group .ticket-info-item .ticket-info-content {
+  width: 78%;
+  padding-left: 15px;
+}
+
+.ticket .ticket-info-group .ticket-info-item .ticket-info-content ol {
+  padding: 0 15px;
+  margin: 0;
+}
+
+.ticket .ticket-number {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .ticket {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .ticket .ticket-name {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    background: none;
+    color: #000;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .ticket .ticket-info-group {
+    border-left: 4px solid #959595;
+    -webkit-box-flex: 4;
+    -webkit-flex: 4;
+        -ms-flex: 4;
+            flex: 4;
+    padding: 0 15px;
+  }
+  .ticket .ticket-info-group .ticket-info-item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .ticket .ticket-info-group .ticket-info-item .ticket-info-title {
+    width: 15%;
+  }
+  .ticket .ticket-info-group .ticket-info-item .ticket-info-content {
+    width: 85%;
+    padding-left: 15px;
+  }
+  .ticket .ticket-number {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.price-box {
+  border-top: 3.5px solid #959595;
+  width: 100%;
+}
+
+.price-box > div {
+  width: 100%;
+  padding-top: 5px;
+}
+
+.price-box > div .price-box-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 5px;
+}
+
+.price-box > div .price-box-item .prcie-box-item-title, .price-box > div .price-box-item .price-box-item-num {
+  text-align: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .price-box {
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .price-box > div {
+    width: 20%;
+  }
+  .price-box > div .price-box-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 5px;
+  }
+  .price-box > div .price-box-item .prcie-box-item-title, .price-box > div .price-box-item .price-box-item-num {
+    text-align: center;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.next-step .st-btn-next {
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+.next-step .st-btn-finsh {
+  padding: 10px 30px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .next-step .st-btn-finsh {
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-right: 50px;
+  }
+}
+
+.activity-group {
+  padding: 20px 0 0 0;
+  font-size: 20px;
+}
+
+.activity-group .activity-item .activity-img {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
+}
+
+.activity-group .activity-item .activity-img img {
+  width: 100%;
+}
+
+.activity-group .activity-item .activity-info {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
+}
+
+.activity-group .activity-item .activity-info .activity-content {
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .activity-group {
+    padding: 60px 0 30px 0;
+  }
+  .activity-group .activity-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .activity-group .activity-item .activity-img {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .activity-group .activity-item .activity-info {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+.expiration-pay {
+  font-size: 20px;
+  padding: 0 5px 50px 5px;
+}
+
+.expiration-pay > div:first-child {
+  font-weight: bold;
+}
+
+.expiration-pay > div {
+  display: inline-block;
+}
+
+.expiration-pay > div > span {
+  color: red;
+}
+
+.payment-method {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 5px 60px 5px;
+}
+
+.payment-method > span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.payment-method > div {
+  display: inline-block;
+}
+
+.payment-method > div > div {
+  padding: 0 5px 10px 5px;
+}
+
+.transaction_complete {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.transaction_complete .transaction_message > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 40px;
+}
+
+.transaction_complete .transaction_message > div > div {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.transaction_complete .transaction_message > div > div i {
+  font-size: 36px;
+}
+
+.transaction_complete .transaction_message > div > div span {
+  font-size: 20px;
+}
+
+.transaction_complete .transaction_message > div .transaction_icon {
+  padding-top: 3px;
+}
+
+.transaction_complete .transaction_message .transaction_line {
+  border: 1.5px solid #01a3a4;
+  height: 2.5px;
+  padding: 0;
+}
+
+.transaction_detail {
+  width: 100%;
+}
+
+.transaction_detail .detail-group .detail-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.transaction_detail .detail-group .detail-item .detail-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.transaction_detail .detail-group .detail-item .detail-content {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .transaction_detail {
+    width: 100%;
+  }
+  .transaction_detail .detail-group .detail-item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .transaction_detail .detail-group .detail-item .detail-title {
+    width: 15%;
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .transaction_detail .detail-group .detail-item .detail-content {
+    width: 85%;
+    font-size: 20px;
+  }
+}
+
+.line > span {
+  position: absolute;
+  display: inline-block;
+  top: -5px;
+  left: 0;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.ticket-qrcode {
+  padding: 0 30px;
+}
+
+.ticket-qrcode .ticket-qrcode-group > div + div {
+  border-top: 1.5px solid #959595;
+}
+
+.ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item {
+  width: 100%;
+}
+
+.ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item .qrcode {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item .qrcode > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item .qrcode > div > span {
+  font-size: 20px;
+}
+
+.ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item .qrcode > img {
+  width: 100%;
+  height: 100%;
+}
+
+.ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item .ticket-detail {
+  -webkit-box-flex: 3;
+  -webkit-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  padding: 10px 0;
+}
+
+.ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item .ticket-detail > div:first-child {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item .ticket-detail > div {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item .qrcode-top {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .ticket-qrcode .ticket-qrcode-group > div + div {
+    border-top: none;
+  }
+  .ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 20px;
+    margin: 30px;
+  }
+  .ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item .qrcode {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  .ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item .qrcode > div {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item .qrcode > div > span {
+    font-size: 20px;
+  }
+  .ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item .qrcode > img {
+    width: 100%;
+    height: 100%;
+  }
+  .ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item .ticket-detail {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    padding: 23px 0;
+  }
+  .ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item .ticket-detail > div:first-child {
+    display: none;
+  }
+  .ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item .ticket-detail > div {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .ticket-qrcode .ticket-qrcode-group .ticket-qrcode-item .qrcode-bottom {
+    display: none;
+  }
+}
+/*# sourceMappingURL=signUp.css.map */

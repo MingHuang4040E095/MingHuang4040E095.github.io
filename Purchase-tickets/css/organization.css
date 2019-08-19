@@ -1,0 +1,182 @@
+.organization {
+  margin-bottom: 30px;
+}
+
+.organization .organization-left {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.organization .organization-left .organization-name {
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.organization .organization-left .organization-description {
+  font-size: 22px;
+}
+
+.organization .organization-right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.organization .organization-right .organization-img {
+  padding: 0 30px;
+}
+
+.organization .organization-right .organization-img img {
+  width: 100%;
+}
+
+.organization .organization-right .organization-icon {
+  width: 100%;
+  padding: 0;
+}
+
+.organization .organization-right .organization-icon > span {
+  font-size: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .organization {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .organization .organization-right .organization-icon {
+    padding: 0 30px;
+  }
+}
+
+.activity-overview .list-block-activity {
+  border-bottom: 1.5px solid #01a3a4;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.activity-overview .list-block-activity .list-activity {
+  font-size: 28px;
+  padding: 10px;
+}
+
+.activity-overview .list-block-activity .list-btn {
+  position: absolute;
+  border: 1.5px solid #01a3a4;
+  font-weight: bold;
+  color: #01a3a4;
+  top: 0px;
+  right: 10px;
+  border-radius: 15px;
+  padding: 5px 20px;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+}
+
+.activity-overview .list-block-activity .list-btn:hover {
+  background: #01a3a4;
+  color: #fff;
+}
+
+.activity-overview .overview {
+  padding: 10px;
+}
+
+.activity-overview .overview .card-overview {
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100%;
+  padding: 10px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+}
+
+@media screen and (min-width: 768px) {
+  .activity-overview .list-block-activity {
+    border-bottom: 1.5px solid #01a3a4;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+  }
+  .activity-overview .list-block-activity .list-activity {
+    font-size: 28px;
+    padding: 10px 40px;
+  }
+  .activity-overview .list-block-activity .list-btn {
+    position: absolute;
+    border: 1.5px solid #01a3a4;
+    font-weight: bold;
+    color: #01a3a4;
+    top: -10px;
+    right: 15%;
+    border-radius: 15px;
+    padding: 5px 20px;
+  }
+  .activity-overview .overview {
+    padding: 10px 30px;
+  }
+  .activity-overview .overview .card-overview {
+    width: 50%;
+    padding: 30px;
+  }
+}
+
+.div-table {
+  display: table;
+  width: 100%;
+}
+
+.div-table .div-tr {
+  display: table-row;
+}
+
+.div-table .div-tr .div-td {
+  display: block;
+}
+
+.div-table .div-tr .div-td::before {
+  content: attr(data-title) " : ";
+}
+
+.div-table .div-thead {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .div-table {
+    display: table;
+    width: 100%;
+  }
+  .div-table .div-tr {
+    display: table-row;
+  }
+  .div-table .div-tr .div-td {
+    display: table-cell;
+  }
+  .div-table .div-tr .div-td::before {
+    display: none;
+  }
+  .div-table .div-tr .w35 {
+    width: 35%;
+  }
+  .div-table .div-tr .w30 {
+    width: 30%;
+  }
+  .div-table .div-tr .w15 {
+    width: 15%;
+  }
+  .div-table .div-tr .w10 {
+    width: 10%;
+  }
+  .div-table .div-thead {
+    display: table-row;
+  }
+}
+/*# sourceMappingURL=organization.css.map */

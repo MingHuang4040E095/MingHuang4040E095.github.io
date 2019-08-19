@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.st-bg-primary {
+    color: #535353;
+}
+
+.st-color-secondary {
+    color: #959595;
+}
+
+body {
+    padding-top: 71px;
+    font-family: PingFangTC-Regular, PingFangTC-Thin, PingFangTC-Semibold, Microsoft JhengHei, Glyphicons Halflings, sans-serif;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    img {
+        width: 100%;
+    }
+} 
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.padding-T-s {
+    padding-top: 10px;
+}
+
+.padding-T-m {
+    padding-top: 20px;
+}
+
+.padding-T-l {
+    padding-top: 40px;
+}
+
+
+//padding左右
+.padding-LR-s {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.padding-LR-m {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+//分隔線
+.separator {
+    border-right: 1px solid #808080;
+}
+
+.header {
+    background: #282a46;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    .header-content {
+        .logo {
+            width: 148px;
+            height: 37px;
+        }
+        .nav-group {
+            padding: 5px 0;
+            .nav-item {
+                vertical-align: middle;
+                display: inline-block;
+                height: 100%;
+                padding: 0 8px;
+                a{
+                    color: #fff;
+                    font-size: 15px;
+                    padding-top: 3px;
+                    display: inline-block;
+                }
+    
+                .user {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
+                    border-radius: 50%;
+                    background: #fff;
+                    width: 27px;
+                    height: 27px;
+                }
+    
+                .search {
+                    font-size: 20px;
+                    transform: rotateY(180deg);
+                    i {
+                        color: #ea7484;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.theme {
+    position: fixed;
+    background: #fff;
+    width: 100%;
+    padding: 5px 0;
+    top: 37px;
+    z-index: 99;
+    .col {
+        flex: 1;
+        text-align: center;
+        cursor: pointer;
+        a {
+            color: #000;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    }
+    .col:hover {
+        a {
+            color: #ea7484;
+        }
+    }
+}
+
+.st-container {
+    width: 100%;
+    margin: auto;
+}
+
+@media screen and ( min-width: 768px ){
+    .st-container {
+        width: 750px;
+    }
+}
+
+
+@media screen and ( min-width: 992px ){
+    .st-container {
+        width: 970px;
+    }
+}
+
+@media screen and ( min-width: 1200px ){
+    .st-container {
+        width: 1200px;
+    }
+}
+
+.filter {
+    display: flex;
+    justify-content: flex-end;
+    .filter-item {
+        width: 80px;
+        position: relative;
+
+        select {
+            border: none;
+            border-bottom: 1px solid #959595;
+            appearance: none;
+            font-weight: lighter;
+            padding-left: 20px;
+            width: 100%;
+            font-size: 12px;
+            line-height: 1.75;
+            cursor: pointer;
+        }
+    
+        // select隔壁的三角形
+        > div {
+            border-color: #959595 transparent transparent transparent;
+            border-style: solid solid solid solid;
+            border-width: 6px;  
+            height: 0px;
+            width: 0px;
+            position: absolute;
+            top: 10px;
+            right: 25px;
+            cursor: pointer;
+        }
+    }
+}
+
+.breadcrumbs {
+    display: flex;
+    justify-content: flex-start;
+    li {
+        position: relative;
+        font-size: 16px;
+        font-weight: lighter;
+    }
+
+    li + li {
+        font-size: 18px;
+        font-weight: bold;
+        a {
+            color: #000;
+        }
+    }
+
+    li + li::before {
+        content: '>';
+        position: absolute;
+        left: -5px;
+        top: -1px;
+    }
+}
+
+.activity {
+    .activity-group {
+        .activity-item {
+            width: 100%;
+            box-sizing: border-box;
+            .categoty {
+                
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and ( min-width:768px ){
+    .activity {
+        .activity-group {
+            display: flex;
+            flex-wrap: wrap;
+            .activity-item {
+                width: 33.33%;
+            }
+        }
+    }
+}
+
+
+

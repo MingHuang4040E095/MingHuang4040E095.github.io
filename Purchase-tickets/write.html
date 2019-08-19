@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/st.css">
+    <link rel="stylesheet" href="css/signUp.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="process center-block">
+            <div>
+                <div class="process-item">
+                    <span class="process-number bg-darkblue text-white">1</span>
+                    <span class="process-name text-darkblue">填寫報名表</span>
+                </div>
+                <label class="bg-secondary"></label>
+                <div class="process-item">
+                    <span class="process-number bg-secondary text-white">2</span>
+                    <span class="process-name text-secondary">確認付款方式</span>
+                </div>
+                <label class="bg-secondary"></label>
+                <div class="process-item">
+                    <span class="process-number bg-secondary text-white">3</span>
+                    <span class="process-name text-secondary">完成報名</span>
+                </div>
+            </div>
+        </div>
+        <div class="center-block">
+            <div class="registeration-info">
+                <div class="registeration-info-item">
+                    <label class="text-darkblue">姓 名</label>
+                    <input type="text" class="input-text">
+                </div>
+                <div class="registeration-info-item">
+                    <label class="text-darkblue">信 箱</label>
+                    <input type="text" class="input-text">
+                </div>
+                <div class="registeration-info-item">
+                    <label class="text-darkblue">電 話</label>
+                    <div class="slct-group slct-group-min">
+                        <!-- 下面的div是三角形	 -->
+                        <div></div>	
+                        <select class="slct text-secondary">
+                            <option>台灣+886</option>
+                        </select>
+                    </div>
+                    <input type="text" class="input-text">
+                </div>
+                <div class="registeration-info-item">
+                    <label class="text-darkblue">文字欄位</label>
+                    <input type="text" class="input-text">
+                </div>
+                <div class="registeration-info-item">
+                    <label class="text-darkblue">文字區塊</label>
+                    <textarea class="input-textarea" rows="10"></textarea>
+                </div>
+                <div class="registeration-info-item">
+                    <label class="text-darkblue">單選欄位</label>
+                    <div>
+                        <label><input type="radio" name="only">選項一</label>
+                        <label><input type="radio" name="only">選項一</label>
+                        <label><input type="radio" name="only">選項一</label>
+                        <label><input type="radio" name="only">選項一</label>
+                    </div>
+                </div>
+                <div class="registeration-info-item">
+                    <label class="text-darkblue">多選欄位</label>
+                    <div>
+                        <label><input type="checkbox">選項一</label>
+                        <label><input type="checkbox">選項一</label>
+                        <label><input type="checkbox">選項一</label>
+                        <label><input type="checkbox">選項一</label>
+                    </div>
+                </div>
+                <div class="registeration-info-item">
+                    <label class="text-darkblue">下拉選單</label>
+                    <div class="slct-group">
+                        <!-- 下面的div是三角形	 -->
+                        <div></div>	
+                        <select class="slct text-secondary">
+                            <option>哇哈哈哈哈</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ticket-selection">
+            <h2>票券選擇</h2>
+            <div class="ticket">
+                <div class="center-block ticket-name bg-secondary text-white">
+                    <span>12/25</span>
+                    <span>台南早鳥票</span>
+                </div>
+                <div class="info-group ticket-info-group">
+                    <div class="info-item ticket-info-item">
+                        <div class="info-title ticket-info-title">票價TWD</div>
+                        <div class="info-content ticket-info-content">$<span class="price" value="450">450</span></div>
+                    </div>
+                    <div class="info-item ticket-info-item">
+                        <div class="info-title ticket-info-title">有效期限</div>
+                        <div class="info-content ticket-info-content">2018/12/25 10:00 ~ 17:00</div>
+                    </div>
+                    <div class="info-item ticket-info-item">
+                        <div class="info-title ticket-info-title">使用說明</div>
+                        <div class="info-content ticket-info-content">
+                            <ol>
+                                <li>本券僅限單次入場，電子票券經驗證後不得要求退換票。</li>
+                                <li>票券一旦遺失、毀破損等之情形，恕不退換補發，展場規定依現場公告為主。</li>
+                                <li>詳細展覽公告請詳閱主辦單位現場及粉絲團公告。</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket-number">
+                    <div class="input-num-box">
+                        <span class="input-num-title">訂購張數</span>
+                        <div class="input-num">
+                            <input type="button" class="less calculation" value="-">
+                            <input type="text" class="input-text" value="0">
+                            <input type="button" class="add calculation" value="+">    
+                        </div>
+                        <span class="sub-total" value="0">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ticket">
+                <div class="center-block ticket-name bg-secondary text-white">
+                    <span>01/10</span>
+                    <span>免費票</span>
+                </div>
+                <div class="info-group ticket-info-group">
+                    <div class="info-item ticket-info-item">
+                        <div class="info-title ticket-info-title">票價TWD</div>
+                        <div class="info-content ticket-info-content">$<span class="price" value="0">0</span></div>
+                    </div>
+                    <div class="info-item ticket-info-item">
+                        <div class="info-title ticket-info-title">有效期限</div>
+                        <div class="info-content ticket-info-content">2019/01/10 10:00 ~ 2019/01/15 17:00</div>
+                    </div>
+                    <div class="info-item ticket-info-item">
+                        <div class="info-title ticket-info-title">使用說明</div>
+                        <div class="info-content ticket-info-content">
+                            <ol>
+                                <li>本券僅限單次入場，電子票券經驗證後不得要求退換票。</li>
+                                <li>票券一旦遺失、毀破損等之情形，恕不退換補發，展場規定依現場公告為主。</li>
+                                <li>詳細展覽公告請詳閱主辦單位現場及粉絲團公告。</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+                <div class="ticket-number">
+                    <div class="input-num-box">
+                        <span class="input-num-title">訂購張數</span>
+                        <div class="input-num">
+                            <input type="button" class="less" value="-">
+                            <input type="text" class="input-text" value="0">
+                            <input type="button" class="add" value="+">
+                        </div>
+                        <span class="sub-total">0</span>
+                    </div>
+                </div>
+            </div>
+            <div class="price-box flex-start-block">
+                <div>
+                    <div class="price-box-item">
+                        <div class="prcie-box-item-title">
+                            <span>總張數</span>
+                        </div>
+                        <div class="price-box-item-num">
+                            <span class="total-number">0</span>
+                        </div>
+                    </div>
+                    <div class="price-box-item">
+                        <div class="prcie-box-item-title">
+                            <span>總金額</span>
+                        </div>
+                        <div class="price-box-item-num">
+                            <span>NT$<span class="total-price">0</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="next-step center-block">
+            <button class="st-btn st-btn-next bg-cyanBlue text-white">下一步</button>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.less').click(function() {
+                var number = $(this).parent().find('input[class*=input-text]');
+                if(number.val()==""||undefined||null||number.val()<1){
+                    number.val(0);  
+                } else {
+                    number.val(parseInt(number.val()) - 1 );
+                }
+            });
+            $('.add').click(function() {
+                var number = $(this).parent().find('input[class*=input-text]');
+                if(number.val()==""||undefined||null){  
+                    number.val(0);  
+                } else {
+                    number.val(parseInt(number.val()) + 1 );
+                    console.log(number.val());
+                }
+            });
+
+
+
+            // $('.add').click(function(){
+            //     //修改数量
+            //     var n=$(this).prev().html();
+            //     var num=parseInt(n)+1;
+            //     $(this).prev().html(num);
+            //     //计算价格
+            //     var c= $(this).parent().siblings().children('.price').html();
+            //     parseInt(c);
+            //     var subPrice = num * c;
+            //     var sub_price = subPrice.toFixed(2); //保留小数点后面两位小数
+            //     $(this).parent().siblings().children('.sub_total').html(sub_price);
+
+            //     //计算总价
+            //     var total=0;
+            //     $('.sub_total').each(function(){
+            //         var price=parseInt($(this).html());
+            //         total+=price;
+            //         var total_price = total.toFixed(2);
+            //         $('.total b').html(total_price);
+            //     });
+            // });
+
+        });
+    </script>
+</body>
+</html>

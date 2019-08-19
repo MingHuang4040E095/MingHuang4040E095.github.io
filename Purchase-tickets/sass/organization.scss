@@ -1,0 +1,197 @@
+//組織首頁
+.organization {
+    margin-bottom: 30px;
+    .organization-left {
+        flex: 2;
+        .organization-name {
+            font-weight: bold;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        .organization-description {
+            font-size: 22px;
+        }
+    }
+    .organization-right {
+        flex: 1;
+        .organization-img {
+            padding: 0 30px;
+            img {
+                width: 100%;
+            }
+        }
+        .organization-icon {
+            width: 100%;
+            padding: 0;
+            > span {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+@media screen and ( min-width: 768px ) {
+    .organization {
+        display: flex;
+        .organization-right {
+            .organization-icon {
+                padding: 0 30px;
+            }
+        }
+    }
+}
+
+.activity-overview {
+    .list-block-activity {
+        border-bottom: 1.5px solid #01a3a4;
+        padding-inline-start: 0;
+        .list-activity {
+            font-size: 28px;
+            padding: 10px;
+        }
+        .list-btn {
+            position: absolute;
+            border: 1.5px solid #01a3a4;
+            font-weight: bold;
+            color: #01a3a4;
+            top: 0px;
+            right: 10px;
+            border-radius: 15px;
+            padding: 5px 20px;
+            transition: .6s;
+            &:hover {
+                background: #01a3a4;
+                color: #fff; 
+            }
+        }
+    } 
+    
+    .overview {
+        padding:10px;
+        .card-overview {
+            cursor: pointer;
+            border-radius: 8px;
+            width: 100%;
+            padding: 10px;
+            transition: .5s;
+        }
+    }
+}
+
+@media screen and ( min-width : 768px ) {
+    .activity-overview {
+        .list-block-activity {
+            border-bottom: 1.5px solid #01a3a4;
+            padding-inline-start: 0;
+            .list-activity {
+                font-size: 28px;
+                padding: 10px 40px;
+            }
+            .list-btn {
+                position: absolute;
+                border: 1.5px solid #01a3a4;
+                font-weight: bold;
+                color: #01a3a4;
+                top: -10px;
+                right: 15%;
+                border-radius: 15px;
+                padding: 5px 20px;
+            }
+        }
+        .overview {
+            padding:10px 30px;
+            .card-overview {
+                width: 50%;
+                padding: 30px;
+            }
+        }
+    }
+}
+
+
+
+//主辦管理活動列表
+// .rwd-table {
+//     >thead {
+//         display:none;
+//         border-bottom: 1.5px solid #01a3a4;
+//         padding: 5px 0;
+//     }
+//     >tbody {
+//         >tr {
+//             >td {
+//                 display: block;
+//                 &::before {
+//                     content: attr(data-title) ' : ' ;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media screen and ( min-width:768px ) {
+//     .rwd-table {
+//         >thead {
+//             display: table-header-group;
+//         }
+//         >tbody {
+//             >tr {
+//                 >td {
+//                     display: table-cell;
+//                     text-align: center;
+//                     &::before {
+//                         display: none;
+//                     }
+//                 }
+//             }
+//         }
+//     }   
+// }
+
+.div-table {
+    display: table;
+    width: 100%;
+    .div-tr {
+        display: table-row;
+        .div-td {
+            display: block;
+            &::before {
+                content: attr(data-title) ' : ';
+            }
+        }
+    }
+    .div-thead {
+        display: none;
+    }
+}
+
+@media screen and ( min-width:768px ) {
+    .div-table {
+        display: table;
+        width: 100%;
+        .div-tr {
+            display: table-row;
+            .div-td {
+                display: table-cell;
+                &::before {
+                    display: none;
+                }
+            }
+            .w35 {
+                width: 35%;
+            }
+            .w30 {
+                width: 30%;
+            }
+            .w15 {
+                width: 15%;
+            }
+            .w10 {
+                width: 10%;
+            }
+        }
+        .div-thead {
+            display: table-row;
+        }
+    } 
+}

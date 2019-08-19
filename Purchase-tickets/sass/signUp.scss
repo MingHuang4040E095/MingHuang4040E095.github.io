@@ -1,0 +1,473 @@
+.process {
+    position: relative;
+    .process-item {
+        display: inline-block;
+        .process-number {
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            padding: 0px 3px 4px 2px;
+            width: 20px;
+            height: 20px;
+        }
+        .process-name {
+            font-weight: bold;
+        }
+        
+    }
+    label {
+        position: relative;
+        display: none;
+        top: -5px;
+        width: 170px;
+        height: 1.5px;
+    }
+}
+
+@media screen and ( min-width: 768px ){
+    .process {
+        label {
+            display: inline-block;
+        }
+    }
+}
+
+//報名活動頁
+
+.registeration-info {
+    width: 100%;
+    padding: 30px 0 0 0;
+    .registeration-info-item {
+        margin-bottom: 20px;
+        >label {
+            display: block;
+            text-align: left;
+
+            width: 100%;
+            font-size: 20px;
+            margin-right: 5px;
+            margin-bottom: 10px;
+        }
+        >div {
+            >label {
+                display: block;
+            }
+            >input {
+                display: block;
+            }
+        }
+
+        .slct-group-min {
+            width: 100%;
+            margin-right: 5px;
+            margin-bottom: 20px;
+            .slct {
+                font-size: 16px;
+            }
+        }
+
+        .slct-group + .input-text {
+            max-width: 100%;
+        }
+
+        .input-textarea {
+            box-sizing: border-box;
+            border: 1.5px solid #959595;
+            width: 100%;
+        } 
+    }
+}
+
+@media screen and ( min-width : 768px ){
+    .registeration-info {
+        width: 70%;
+        .registeration-info-item {
+            display: flex;
+
+            margin-bottom: 20px;
+            >label {
+                display: inline-block;
+                text-align: right;
+
+                width: 120px;
+                margin-bottom: 0;
+            }
+            > input {
+                max-width: 560px;
+            }
+
+            .slct-group-min {
+                width: 130px;
+                margin-bottom: 0;
+            }
+
+            .slct-group + .input-text {
+                max-width: 425px;
+            }
+
+            >textarea,.slct-group {
+                max-width: 560px;
+            }
+        }
+    }
+    
+}
+
+.ticket-selection {
+    margin-bottom: 40px;
+}
+
+.ticket {
+    width: 100%;
+    margin-bottom: 30px;
+    .ticket-name {
+        align-items: center;
+        padding: 5px 0;
+        font-size: 18px;
+    }
+    .ticket-info-group {
+        padding: 10px 15px;
+        .ticket-info-item {
+            width: 100%;
+            margin-bottom: 15px;
+            .ticket-info-title {
+                width: 22%;
+            }
+            .ticket-info-content {
+                width: 78%;
+                padding-left: 15px;
+                ol {
+                    padding: 0 15px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .ticket-number {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and ( min-width : 768px ) {
+    .ticket {
+        display: flex;
+        .ticket-name {
+            justify-content: flex-start;
+            background: none;
+            color: #000;
+            flex: 1;
+        }
+        .ticket-info-group {
+            border-left: 4px solid #959595;
+            flex: 4;
+            padding: 0 15px;
+            .ticket-info-item {
+                width: 100%;
+                margin-bottom: 15px;
+                .ticket-info-title {
+                    width: 15%;
+                }
+                .ticket-info-content {
+                    width: 85%;
+                    padding-left: 15px;
+                }
+            }
+        }
+        .ticket-number {
+            flex: 1;
+        }
+    } 
+}
+
+.price-box {
+    border-top: 3.5px solid #959595;
+    width: 100%;
+    >div {
+        width: 100%;
+        padding-top: 5px;
+        .price-box-item {
+            display: flex;
+            padding: 5px;
+            .prcie-box-item-title,.price-box-item-num {
+                text-align: center;
+                flex: 1;
+            }
+        }
+    }
+}
+
+@media screen and ( min-width : 768px ) {
+    .price-box {    
+        justify-content: flex-end;
+        >div {
+            width: 20%;
+            .price-box-item {
+                display: flex;
+                padding: 5px;
+                .prcie-box-item-title,.price-box-item-num {
+                    text-align: center;
+                    flex: 1;
+                }
+            }
+        }
+    }
+}
+
+.next-step {
+    .st-btn-next {
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+    .st-btn-finsh {
+        padding: 10px 30px;
+        font-size: 20px;
+    }
+}
+
+@media screen and ( min-width : 768px ) {
+    .next-step {
+        .st-btn-finsh {
+            padding: 10px 30px;
+            font-size: 20px;
+            margin-right: 50px;
+        }
+    }
+}
+
+//確認付款方式頁
+
+.activity-group {
+    padding:20px 0 0 0;
+    font-size: 20px;
+    .activity-item {
+        .activity-img {
+            box-sizing: border-box;
+            padding: 5px;
+            img {
+                width: 100%;
+            }
+        }
+        .activity-info {
+            box-sizing: border-box;
+            padding: 5px;
+            .activity-content {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media screen and ( min-width : 768px ) {
+    .activity-group {
+        padding:60px 0 30px 0;
+        .activity-item {
+            display: flex;
+            .activity-img {
+                flex: 1;
+            }
+            .activity-info {
+                flex: 1;
+            }
+        }
+    }
+}
+
+.expiration-pay {
+    font-size: 20px;
+    padding: 0 5px 50px 5px;
+    >div:first-child {
+        font-weight: bold;
+    }
+
+    >div {
+        display: inline-block;
+        >span {
+            color: red;
+        }
+    }
+}
+
+.payment-method {
+    display: flex;
+    padding: 0 5px 60px 5px;
+    >span {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    >div {
+        display: inline-block;
+        >div {
+            padding: 0 5px 10px 5px;
+        }
+    }
+}
+
+//完成付款頁
+
+.transaction_complete {
+    width: 100%;
+    margin-bottom: 60px;
+    .transaction_message {
+        >div {
+            display: flex;
+            padding: 10px 40px;
+            >div {
+                display: inline-block;
+                padding: 0 5px;
+                i {
+                    font-size: 36px;
+                }
+                span {
+                    font-size: 20px;
+                }
+            }
+            .transaction_icon {
+                padding-top: 3px;
+            }
+        }
+        .transaction_line {
+            border: 1.5px solid #01a3a4;
+            height: 2.5px;
+            padding: 0;
+        }
+    }
+}
+
+.transaction_detail {
+    width: 100%;
+    .detail-group {
+        .detail-item {
+            width: 100%;
+            margin-bottom: 20px;
+            .detail-title {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .detail-content {
+                font-size: 20px;
+            }
+        } 
+    }
+}
+
+@media screen and ( min-width : 768px) {
+    .transaction_detail {
+        width: 100%;
+        .detail-group {
+            .detail-item {
+                width: 100%;
+                margin-bottom: 20px;
+                .detail-title {
+                    width: 15%;
+                    font-size: 20px;
+                    font-weight: normal;
+                }
+                .detail-content {
+                    width: 85%;
+                    font-size: 20px;
+                }
+            } 
+        }
+    }
+}
+
+.line {
+    >span {
+        position: absolute;
+        display: inline-block;
+        top: -5px;
+        left: 0;
+        border-radius: 50%;
+        width:12px;
+        height: 12px;
+    }
+}
+
+.ticket-qrcode {
+    padding: 0 30px;
+    .ticket-qrcode-group {
+        >div +div {
+            border-top: 1.5px solid #959595;
+        }
+        .ticket-qrcode-item {
+            width: 100%;
+            .qrcode {
+                display: flex;
+                justify-content: flex-end;
+                flex: 1;
+                >div {
+                    display: flex;
+                    align-items: center;
+                    >span {
+                        font-size: 20px;
+                    }
+                }
+                >img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .ticket-detail {
+                flex: 3;
+                padding: 10px 0;
+                >div:first-child {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+                >div {
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                }
+            }
+            .qrcode-top {
+                display: none;
+            }
+        }
+    }
+}
+
+@media screen and ( min-width : 768px) {
+    .ticket-qrcode {
+        .ticket-qrcode-group {
+            >div +div {
+                border-top: none;
+            }
+            .ticket-qrcode-item {
+                display: flex;
+                padding: 0 20px;
+                margin: 30px;
+                .qrcode {
+                    display: flex;
+                    justify-content: flex-end;
+                    flex: 1;
+                    >div {
+                        display: flex;
+                        align-items: center;
+                        >span {
+                            font-size: 20px;
+                        }
+                    }
+                    >img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .ticket-detail {
+                    flex: 3;
+                    padding: 23px 0;
+                    >div:first-child {
+                        display: none;
+                    }
+                    >div {
+                        margin-bottom: 10px;
+                        font-size: 20px;
+                    }
+                }
+                .qrcode-bottom {
+                    display: none;
+                }
+            }
+        }
+    }
+}
