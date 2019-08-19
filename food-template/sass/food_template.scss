@@ -219,7 +219,6 @@ $screens: xs sm;
 
 .title {
     animation-name:fadein;
-    animation-delay: 0.5s;
     animation-iteration-count: initial;
     animation-duration:3s;
 }
@@ -233,7 +232,6 @@ $screens: xs sm;
 }
 .introduction {
     animation-name:fadein;
-    animation-delay: 0.8s;
     animation-iteration-count: initial;
     animation-duration:3s;
     border-left: 2.5px solid $secondary-color;
