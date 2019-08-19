@@ -9,6 +9,10 @@
     background-size: cover;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     @extend %img-bg;
     background-image:url(../img/bg.jpg);
@@ -132,10 +136,13 @@ body {
             width: 100%;
             background: #3b3a3a;
             padding: 95px 40px 40px 40px;
-            p{
+            p,a{
                 color: rgba(218, 210, 210, 0.8);
                 font-size: 18px;
                 margin-bottom: 20px;
+            }
+            a:hover {
+                color: #EA7484;
             }
         }
     }

@@ -191,6 +191,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function(){
+            $('.st-btn-next').click(function(){
+                location.href="./confirm_payment.html"
+            })
             $('.less').click(function() {
                 var number = $(this).parent().find('input[class*=input-text]');
                 if(number.val()==""||undefined||null||number.val()<1){
@@ -208,31 +211,6 @@
                     console.log(number.val());
                 }
             });
-
-
-
-            // $('.add').click(function(){
-            //     //修改数量
-            //     var n=$(this).prev().html();
-            //     var num=parseInt(n)+1;
-            //     $(this).prev().html(num);
-            //     //计算价格
-            //     var c= $(this).parent().siblings().children('.price').html();
-            //     parseInt(c);
-            //     var subPrice = num * c;
-            //     var sub_price = subPrice.toFixed(2); //保留小数点后面两位小数
-            //     $(this).parent().siblings().children('.sub_total').html(sub_price);
-
-            //     //计算总价
-            //     var total=0;
-            //     $('.sub_total').each(function(){
-            //         var price=parseInt($(this).html());
-            //         total+=price;
-            //         var total_price = total.toFixed(2);
-            //         $('.total b').html(total_price);
-            //     });
-            // });
-
         });
     </script>
 </body>
