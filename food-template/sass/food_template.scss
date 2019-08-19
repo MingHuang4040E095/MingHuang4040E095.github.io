@@ -127,7 +127,7 @@ $padding-size: 1 2 3 4 5;
         font-weight: bold;
         padding: 0.5rem 1.5rem 0.5rem 0;
     }
-    ul {
+    >ul {
         display: flex;
         .active {
             border-bottom: 2.5px solid $primary-color;
@@ -135,7 +135,7 @@ $padding-size: 1 2 3 4 5;
                 color: $primary-color;
             }
         }
-        li {
+        >li {
             display: inline-block;
             padding: 0.5rem 1.5rem;
             &:last-child {
@@ -143,12 +143,51 @@ $padding-size: 1 2 3 4 5;
             }
         }
     }
+    .btn-menu {
+        display: none;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        > .fa-bars {
+            font-size: 1.2rem;
+        }
+    }
+    .menu-control {
+        display: none;
+    }
+    .menu-control:checked {
+        &~.phone-menu {
+            display: block;
+            top: 0;
+            left: 0;
+        }
+    }
+    .phone-menu {
+        box-sizing: border-box;
+        background:#fff;
+        border-right: 0.5px solid #c8c9ca;
+        height:calc(100vh - 66px);
+        width:75%;
+        position: absolute;
+        top: 0;
+        left: -100vw;
+        transition: 1s;
+        margin-top:66px;
+        >ul{
+            li {
+                padding: 5px 2rem;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 768px){
     .navbar {
-        ul {
+        >ul {
             display: none;
+        }
+        .btn-menu {
+            display: inline-block;
         }
     }
 }
@@ -193,6 +232,24 @@ $screens: xs sm;
     }
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+@media screen and (max-width:768px){
+    .header {
+        background: #fff;
+    }
+}
+
+.content {
+    padding-top: 66px;
+}
+
 .title {
     // animation-name:fadein;
     // animation-iteration-count: initial;
@@ -211,6 +268,11 @@ $screens: xs sm;
     // animation-iteration-count: initial;
     // animation-duration:3s;
     border-left: 2.5px solid $secondary-color;
+}
+@media screen and (max-width:768px){
+    .introduction {
+        padding: 0 1rem;
+    }
 }
 
 .community {

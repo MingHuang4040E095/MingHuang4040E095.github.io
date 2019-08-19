@@ -321,33 +321,77 @@ h4 {
   padding: 0.5rem 1.5rem 0.5rem 0;
 }
 
-.navbar ul {
+.navbar > ul {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
-.navbar ul .active {
+.navbar > ul .active {
   border-bottom: 2.5px solid #000000;
 }
 
-.navbar ul .active > a {
+.navbar > ul .active > a {
   color: #000000;
 }
 
-.navbar ul li {
+.navbar > ul > li {
   display: inline-block;
   padding: 0.5rem 1.5rem;
 }
 
-.navbar ul li:last-child {
+.navbar > ul > li:last-child {
   padding-right: 0;
 }
 
+.navbar .btn-menu {
+  display: none;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+
+.navbar .btn-menu > .fa-bars {
+  font-size: 1.2rem;
+}
+
+.navbar .menu-control {
+  display: none;
+}
+
+.navbar .menu-control:checked ~ .phone-menu {
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+.navbar .phone-menu {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #fff;
+  border-right: 0.5px solid #c8c9ca;
+  height: calc(100vh - 66px);
+  width: 75%;
+  position: absolute;
+  top: 0;
+  left: -100vw;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  margin-top: 66px;
+}
+
+.navbar .phone-menu > ul li {
+  padding: 5px 2rem;
+}
+
 @media screen and (max-width: 768px) {
-  .navbar ul {
+  .navbar > ul {
     display: none;
+  }
+  .navbar .btn-menu {
+    display: inline-block;
   }
 }
 
@@ -535,6 +579,24 @@ h4 {
   }
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    background: #fff;
+  }
+}
+
+.content {
+  padding-top: 66px;
+}
+
 @-webkit-keyframes fadein {
   0% {
     opacity: 0;
@@ -555,6 +617,12 @@ h4 {
 
 .introduction {
   border-left: 2.5px solid #ea7484;
+}
+
+@media screen and (max-width: 768px) {
+  .introduction {
+    padding: 0 1rem;
+  }
 }
 
 .community {
