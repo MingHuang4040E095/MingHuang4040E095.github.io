@@ -345,6 +345,12 @@ h4 {
   padding-right: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+}
+
 .row {
   display: -webkit-box;
   display: -webkit-flex;
