@@ -370,6 +370,7 @@ h4 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background: #fff;
+  border-top: 0.5px solid #fff;
   border-right: 0.5px solid #c8c9ca;
   height: calc(100vh - 66px);
   width: 75%;
