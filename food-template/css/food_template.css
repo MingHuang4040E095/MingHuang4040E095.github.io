@@ -529,15 +529,6 @@ h4 {
   }
 }
 
-.title {
-  -webkit-animation-name: fadein;
-          animation-name: fadein;
-  -webkit-animation-iteration-count: initial;
-          animation-iteration-count: initial;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-}
-
 @-webkit-keyframes fadein {
   0% {
     opacity: 0;
@@ -557,12 +548,6 @@ h4 {
 }
 
 .introduction {
-  -webkit-animation-name: fadein;
-          animation-name: fadein;
-  -webkit-animation-iteration-count: initial;
-          animation-iteration-count: initial;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
   border-left: 2.5px solid #ea7484;
 }
 

@@ -31,13 +31,6 @@ body {
             animation-duration:1.5s;
         }
     }
-    // &::after {
-    //     content: '';
-    //     position: absolute;
-    //     width: 20px;
-    //     height: 20px;
-    //     border: 4px solid $secondary-color;
-    // }
 }
 .btn-anime {
     position: relative;
@@ -46,18 +39,6 @@ body {
     width: 100px;
     border-top: 4px solid $secondary-color;
 }
-
-// .btn-anime::after {
-//     content: '';
-//     border-right: 4px solid $secondary-color;
-//     position: absolute;
-//     top: -12px;
-//     right: 0;
-//     width: 16px;
-//     height: 16px;
-//     transform: rotate(45deg);
-// }
-
 @keyframes more{
     0%{
         opacity: 0;
@@ -218,9 +199,9 @@ $screens: xs sm;
 }
 
 .title {
-    animation-name:fadein;
-    animation-iteration-count: initial;
-    animation-duration:3s;
+    // animation-name:fadein;
+    // animation-iteration-count: initial;
+    // animation-duration:3s;
 }
 @keyframes fadein {
     0%{
@@ -231,9 +212,9 @@ $screens: xs sm;
     }
 }
 .introduction {
-    animation-name:fadein;
-    animation-iteration-count: initial;
-    animation-duration:3s;
+    // animation-name:fadein;
+    // animation-iteration-count: initial;
+    // animation-duration:3s;
     border-left: 2.5px solid $secondary-color;
 }
 
