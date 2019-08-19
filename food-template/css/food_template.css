@@ -361,7 +361,7 @@ h4 {
 }
 
 .navbar .menu-control:checked ~ .phone-menu {
-  display: block;
+  display: none;
   top: 0;
   left: 0;
 }
@@ -372,6 +372,7 @@ h4 {
   background: #fff;
   border-top: 0.5px solid #fff;
   border-right: 0.5px solid #c8c9ca;
+  display: none;
   height: calc(100vh - 66px);
   width: 75%;
   position: absolute;
@@ -391,8 +392,14 @@ h4 {
   .navbar > ul {
     display: none;
   }
+  .navbar .menu-control:checked ~ .phone-menu {
+    display: block;
+  }
   .navbar .btn-menu {
     display: inline-block;
+  }
+  .navbar .phone-menu {
+    display: block;
   }
 }
 

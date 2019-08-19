@@ -157,7 +157,7 @@ $padding-size: 1 2 3 4 5;
     }
     .menu-control:checked {
         &~.phone-menu {
-            display: block;
+            display: none;
             top: 0;
             left: 0;
         }
@@ -167,6 +167,7 @@ $padding-size: 1 2 3 4 5;
         background:#fff;
         border-top: 0.5px solid #fff;
         border-right: 0.5px solid #c8c9ca;
+        display: none;
         height:calc(100vh - 66px);
         width:75%;
         position: absolute;
@@ -187,8 +188,16 @@ $padding-size: 1 2 3 4 5;
         >ul {
             display: none;
         }
+        .menu-control:checked {
+            &~.phone-menu {
+                display: block;
+            }
+        }
         .btn-menu {
             display: inline-block;
+        }
+        .phone-menu {
+            display: block;
         }
     }
 }
